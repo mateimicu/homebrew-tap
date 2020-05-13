@@ -2,16 +2,16 @@
 class Kdiscover < Formula
   desc "Utility for listing and exporting config for K8s Clusters"
   homepage ""
-  version "0.0.1-rc8"
+  version "0.0.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/mateimicu/kdiscover/releases/download/v0.0.1-rc8/kdiscover_0.0.1-rc8_darwin_amd64.tar.gz"
-    sha256 "5df376d063f13801dd343675a6aa8b06774ff8806fc8dc3287502e5c93095fa0"
+    url "https://github.com/mateimicu/kdiscover/releases/download/v0.0.1/kdiscover_0.0.1_darwin_amd64.tar.gz"
+    sha256 "9fde040e6a82dae9a50cb0f3d0620b7e8bd2fb0ce262acfbe574a47cc534c5ae"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/mateimicu/kdiscover/releases/download/v0.0.1-rc8/kdiscover_0.0.1-rc8_linux_amd64.tar.gz"
-      sha256 "09dcae06050342021307ee54292e4a9eb80267033af0c57fdda6013950209baf"
+      url "https://github.com/mateimicu/kdiscover/releases/download/v0.0.1/kdiscover_0.0.1_linux_amd64.tar.gz"
+      sha256 "07d0b7a2890c19f10a42e5bce6792433733932caf5224eb1c64fc681fd436ff1"
     end
   end
 
