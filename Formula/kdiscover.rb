@@ -5,20 +5,20 @@
 class Kdiscover < Formula
   desc "Utility for listing and exporting config for K8s Clusters"
   homepage ""
-  version "0.1.3"
+  version "0.1.4"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/mateimicu/kdiscover/releases/download/v0.1.3/kdiscover_0.1.3_darwin_arm64.tar.gz"
-      sha256 "9b165434511e64840b5b8f2dc92a68a6a83255c168fbcf6ed7f084742cbe010a"
+      url "https://github.com/mateimicu/kdiscover/releases/download/v0.1.4/kdiscover_0.1.4_darwin_arm64.tar.gz"
+      sha256 "ad80964687a7c1a33df04577a77ecdc24bce8501f29172e681ce35d9a28579c6"
 
       def install
         bin.install "kdiscover"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/mateimicu/kdiscover/releases/download/v0.1.3/kdiscover_0.1.3_darwin_amd64.tar.gz"
-      sha256 "0cdfd2ae43c13e113b898568baeb443d180c8c95f68f26eb9b3526a25ebf54e6"
+      url "https://github.com/mateimicu/kdiscover/releases/download/v0.1.4/kdiscover_0.1.4_darwin_amd64.tar.gz"
+      sha256 "7bdd183e6f4b596aa8804be61de72d54fe8e446ab1bb4733a694454d2173384a"
 
       def install
         bin.install "kdiscover"
@@ -27,17 +27,17 @@ class Kdiscover < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mateimicu/kdiscover/releases/download/v0.1.3/kdiscover_0.1.3_linux_arm64.tar.gz"
-      sha256 "2ea7565a72d84da9937b99a35c91fc47436ccfcda7b0970439e03befa10770af"
+    if Hardware::CPU.intel?
+      url "https://github.com/mateimicu/kdiscover/releases/download/v0.1.4/kdiscover_0.1.4_linux_amd64.tar.gz"
+      sha256 "4f964d3ba1dcde801e4f985a532db7fd4ed3cbde2d31be67f58f96e0c2a72ab9"
 
       def install
         bin.install "kdiscover"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/mateimicu/kdiscover/releases/download/v0.1.3/kdiscover_0.1.3_linux_amd64.tar.gz"
-      sha256 "60ae25cd4ec869da87252d4bdafc92f1ac570ed54b62847feb8530893fef30ab"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/mateimicu/kdiscover/releases/download/v0.1.4/kdiscover_0.1.4_linux_arm64.tar.gz"
+      sha256 "8ec045d19222bf08bfbd7e1c77f905e27518a02f926c5f4430fdd2bb2ffd9e99"
 
       def install
         bin.install "kdiscover"
