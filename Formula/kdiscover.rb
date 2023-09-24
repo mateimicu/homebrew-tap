@@ -5,20 +5,20 @@
 class Kdiscover < Formula
   desc "Utility for listing and exporting config for K8s Clusters"
   homepage ""
-  version "0.1.5"
+  version "0.1.6"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/mateimicu/kdiscover/releases/download/v0.1.5/kdiscover_v0.1.5_darwin_arm64.tar.gz"
-      sha256 "7ce767934a78c0eeefabd3594e7e3f19df12c6b2301c30089817faef4f613cf9"
+      url "https://github.com/mateimicu/kdiscover/releases/download/v0.1.6/kdiscover_v0.1.6_darwin_arm64.tar.gz"
+      sha256 "fa381d824244708a9a030b98793768280965a2755b44fbecdb0b0206d670636f"
 
       def install
         bin.install "kdiscover"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/mateimicu/kdiscover/releases/download/v0.1.5/kdiscover_v0.1.5_darwin_amd64.tar.gz"
-      sha256 "2fbcc87b67f7af2ccc9ff5f6a9950f9afb044f514a9cfa07db59e4b1fc785218"
+      url "https://github.com/mateimicu/kdiscover/releases/download/v0.1.6/kdiscover_v0.1.6_darwin_amd64.tar.gz"
+      sha256 "f71d940c517cef9d826f83b7202dcc112cda0923514b6c72d6e5d2e9514775e2"
 
       def install
         bin.install "kdiscover"
@@ -28,16 +28,16 @@ class Kdiscover < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/mateimicu/kdiscover/releases/download/v0.1.5/kdiscover_v0.1.5_linux_amd64.tar.gz"
-      sha256 "b8e4dcca06b822ee421959fdadef3e75a35e2e6db5fd70c4d14cc068ba856358"
+      url "https://github.com/mateimicu/kdiscover/releases/download/v0.1.6/kdiscover_v0.1.6_linux_amd64.tar.gz"
+      sha256 "2e12eef8b35a521c58785aceb3b24891c2ef42140e41e5d8c7707aef2f18108e"
 
       def install
         bin.install "kdiscover"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mateimicu/kdiscover/releases/download/v0.1.5/kdiscover_v0.1.5_linux_arm64.tar.gz"
-      sha256 "8376690fcb9c3a59c3eba19478241fff1619e5358c0c904c232b86b7967b5ad4"
+      url "https://github.com/mateimicu/kdiscover/releases/download/v0.1.6/kdiscover_v0.1.6_linux_arm64.tar.gz"
+      sha256 "f1db5e89ede0beb44054c6583039867a80c638a9f1ca5d10afb38c59dd4284b8"
 
       def install
         bin.install "kdiscover"
