@@ -10,7 +10,7 @@ class Kdiscover < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/mateimicu/kdiscover/releases/download/v0.1.6/kdiscover_v0.1.6_darwin_arm64.tar.gz"
-      sha256 "fa381d824244708a9a030b98793768280965a2755b44fbecdb0b0206d670636f"
+      sha256 "7852771261a820277526046911352b228f4eafdfec3b20c8d2fd0af9a44ace43"
 
       def install
         bin.install "kdiscover"
@@ -18,7 +18,7 @@ class Kdiscover < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/mateimicu/kdiscover/releases/download/v0.1.6/kdiscover_v0.1.6_darwin_amd64.tar.gz"
-      sha256 "f71d940c517cef9d826f83b7202dcc112cda0923514b6c72d6e5d2e9514775e2"
+      sha256 "9f1b3f41f555de870c0c3bce02656ba551094fbf3478ce0b8316797a18c7c58f"
 
       def install
         bin.install "kdiscover"
@@ -29,7 +29,7 @@ class Kdiscover < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/mateimicu/kdiscover/releases/download/v0.1.6/kdiscover_v0.1.6_linux_amd64.tar.gz"
-      sha256 "2e12eef8b35a521c58785aceb3b24891c2ef42140e41e5d8c7707aef2f18108e"
+      sha256 "cd0c5e0c8e52810f6a6eceb6177212547d5c386e404dfcb6d7e8b1777c5b51d7"
 
       def install
         bin.install "kdiscover"
@@ -37,7 +37,7 @@ class Kdiscover < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/mateimicu/kdiscover/releases/download/v0.1.6/kdiscover_v0.1.6_linux_arm64.tar.gz"
-      sha256 "f1db5e89ede0beb44054c6583039867a80c638a9f1ca5d10afb38c59dd4284b8"
+      sha256 "779fb8fc98eaa2c5368bc31e052e50403053d032afc0a0f45e98ac36ccdb1312"
 
       def install
         bin.install "kdiscover"
